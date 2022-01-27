@@ -33,53 +33,7 @@ Revature Courseware Cornucopia is an Angular Single Page Application that will a
 - Sonar
 
 # Get Started
-- Set environment variables listed below
-
-- Clone the repositories linked below
-
-`git clone https://github.com/revature-RCC/project3-frontend`
-
-`git clone https://github.com/revature-RCC/project3-backend`
-
-`git clone https://github.com/revature-RCC/project3-e2e`
-
-- Use Maven to install dependencies on the backend
-- Compile and run the backend
-
-- Install NPM packages for the frontend (in project3-frontend/)
-
-`npm install`
-
-- Run the Angular server (in project3-frontend/)
-
-`ng serve`
-
-- Access the frontend from http://localhost:4200 in your browser
-
-# Environment Variables
-Environment Variables:
-
-SPRING_DATABASE_URL `jdbc:h2:./h2/db`
-
-SPRING_DATABASE_USERNAME `sa`
-
-SPRING_DATABASE_PASSWORD `sa`
-
-SPRING_DATABASE_DRIVER `org.h2.Driver`
-
-SPRING_DATABASE_PLATFORM `org.hibernate.dialect.H2Dialect`
-
-SPRING_DATABASE_DDL_METHOD `create`
-
-DRIVER `webdriver.chrome.driver`
-
-DRIVER_LOCATION `<path to your chromedriver, example: C:\Program Files\chromedriver\chromedriver.exe>`
-
-AWS_PASS `<your AWS S3 Access Key>`
-
-AWS_SECRET_PASS `<your AWS S3 Secret Key>`
-
-SONAR_TOKEN `<your Sonar Token (not required to run the project)>`
+- Refer to [STARTUP.md](STARTUP.md)
 
 # Repositories
 project3-frontend https://github.com/revature-RCC/project3-frontend
