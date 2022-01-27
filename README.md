@@ -14,6 +14,7 @@ Revature Courseware Cornucopia is an Angular Single Page Application that will a
 - View transaction
 - Sales/Deals
 - Dark Mode
+- Admin Page
 
 # Technologies Used
 - Java 8
