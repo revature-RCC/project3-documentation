@@ -46,7 +46,7 @@ Revature Courseware Cornucopia is an Angular Single Page Application that will a
 - Use Maven to install dependencies on the backend
 - Compile and run the backend
 
-- Install NPM packages for the frontend (in project2-frontend/)
+- Install NPM packages for the frontend (in project3-frontend/)
 
 `npm install`
 
