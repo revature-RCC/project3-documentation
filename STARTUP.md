@@ -3,9 +3,16 @@
 # Software
 - JDK 8
 - Maven 3.8.4 or above
+- NodeJS 16.13.1 or above
 - NPM 8.3.0 or above
 - Angular CLI 13.1.1 or above
 - chromedriver (your browser version)
+- Sonar (requires JDK 11 for Maven CLI command)
+- IntelliJ IDE Community
+
+# IntelliJ Plugins
+- Cucumber for Java 212.4746.52
+- Gherkin 212.5457.62
 
 # Ports
 - Frontend: 4200
@@ -38,6 +45,9 @@ End-to-end Testing
 - The default dependencies from the Angular CLI
 
 # Get Started
+- Set up AWS S3 bucket and get access key and secret key (for admin page file upload)
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-walkthroughs-managing-access-example1.html
+
 - Set environment variables listed below
 
 - Clone the repositories linked below
@@ -83,6 +93,10 @@ AWS_PASS `<your AWS S3 Access Key>`
 AWS_SECRET_PASS `<your AWS S3 Secret Key>`
 
 SONAR_TOKEN `<your Sonar Token (not required to run the project)>`
+
+# Deployment
+- env variables
+- how to deploy
 
 # Repositories
 project3-frontend https://github.com/revature-RCC/project3-frontend
