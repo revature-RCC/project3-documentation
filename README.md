@@ -60,34 +60,34 @@ You are responsible for detailing the README.md with general application informa
 # Environment Variables
 Environment Variables:
 
-`SPRING_DATABASE_URL`
+SPRING_DATABASE_URL
 `jdbc:h2:./h2/db`
 
-`SPRING_DATABASE_USERNAME`
+SPRING_DATABASE_USERNAME
 `sa`
 
-`SPRING_DATABASE_PASSWORD`
+SPRING_DATABASE_PASSWORD
 `sa`
 
-`SPRING_DATABASE_DRIVER`
+SPRING_DATABASE_DRIVER
 `org.h2.Driver`
 
-`SPRING_DATABASE_PLATFORM`
+SPRING_DATABASE_PLATFORM
 `org.hibernate.dialect.H2Dialect`
 
-`SPRING_DATABASE_DDL_METHOD`
+SPRING_DATABASE_DDL_METHOD
 `create`
 
-`DRIVER`
+DRIVER
 `webdriver.chrome.driver`
 
-`DRIVER_LOCATION`
+DRIVER_LOCATION
 `<path to your chromedriver, example: C:\Program Files\chromedriver\chromedriver.exe>`
 
-`AWS_PASS`
+AWS_PASS
 `<your AWS S3 Access Key>`
 
-`AWS_SECRET_PASS`
+AWS_SECRET_PASS
 `<your AWS S3 Secret Key>`
 
 # Repositories
