@@ -87,7 +87,7 @@ Environment Variables:
 `AWS_PASS`
 `<your AWS S3 Access Key>`
 
-AWS_SECRET_PASS
+`AWS_SECRET_PASS`
 `<your AWS S3 Secret Key>`
 
 # Repositories
