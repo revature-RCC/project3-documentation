@@ -33,7 +33,7 @@ Revature Courseware Cornucopia is an Angular Single Page Application that will a
 - Sonar
 
 # Get Started
-- Refer to [STARTUP.md](STARTUP.md)
+- Refer to [STARTUP.md](https://github.com/revature-RCC/project3-documentation/blob/main/STARTUP.md)
 
 # Repositories
 project3-frontend https://github.com/revature-RCC/project3-frontend
