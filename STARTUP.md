@@ -94,6 +94,9 @@ AWS_SECRET_PASS `<your AWS S3 Secret Key>`
 
 SONAR_TOKEN `<your Sonar Token (not required to run the project)>`
 
+# Testing
+Testing documentation is included in this repository
+
 # Deployment
 - env variables
 - how to deploy
