@@ -94,7 +94,7 @@ AWS_SECRET_PASS `<your AWS S3 Secret Key>`
 
 SONAR_TOKEN `<your Sonar Token (not required to run the project)>`
 
-PROJECT3_FRONTEND_URL `http://localhost:5432/`
+PROJECT3_FRONTEND_URL `http://localhost:4200/`
 
 # Testing
 Testing documentation is included in this repository
