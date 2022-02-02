@@ -70,8 +70,31 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-walkthroughs-manag
 
 - Access the website from http://localhost:4200 in your browser
 
+# Testing
+Testing documentation is included in this repository
+
+# Deployment
+- Set up AWS EC2 and RDS
+- Set your environment variables listed below (production)
+- Install Jenkins on EC2
+- Set up Jenkins to install Maven and NodeJS (in Jenkins configuration, we used a plugin for NodeJS)
+- Set up Maven to use Java 11 (for Sonar)
+- Create Jenkins job
+- Set up the Jenkins job to use your backend Git repository (in the General, Source Code Management, and Build Triggers (only for webhook) sections)
+- Set up GitHub webhook for Jenkins (not required)
+- Set up Jenkins job build step that builds the backend with Maven, runs a Sonar analysis, and runs the jar in the background
+
+Example Jenkins job build step (shell script):
+```
+mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar "-Dsonar.projectKey=revature-RCC_project3-backend"
+
+export BUILD_ID=dontKillMe
+JENKINS_NODE_COOKIE=dontKillMe sudo -E nohup java -jar target/project3-backend-0.0.1-SNAPSHOT.jar &
+```
+
 # Environment Variables
 
+## Developoment
 SPRING_DATABASE_URL `jdbc:h2:./h2/db`
 
 SPRING_DATABASE_USERNAME `sa`
@@ -96,12 +119,21 @@ SONAR_TOKEN `<your Sonar Token (not required to run the project)>`
 
 PROJECT3_FRONTEND_URL `http://localhost:4200/`
 
-# Testing
-Testing documentation is included in this repository
+## Production
 
-# Deployment
-- env variables
-- how to deploy
+SPRING_DATABASE_URL `jdbc:postgresql://<your AWS RDS url>/<your AWS RDS database name>`
+
+SPRING_DATABASE_USERNAME `<your AWS RDS username>`
+
+SPRING_DATABASE_PASSWORD `<your AWS RDS password>`
+
+SPRING_DATABASE_DRIVER `<your database driver class, we used org.postgresql.Driver>`
+
+SPRING_DATABASE_PLATFORM `<your database platform class, we used org.hibernate.dialect.PostgreSQL9Dialect>`
+
+SPRING_DATABASE_DDL_METHOD `update`
+
+PROJECT3_FRONTEND_URL `<your frontend url and port>`
 
 # Repositories
 project3-frontend https://github.com/revature-RCC/project3-frontend
