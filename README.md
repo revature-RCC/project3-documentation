@@ -29,7 +29,6 @@ Revature Courseware Cornucopia is an Angular Single Page Application that will a
 - Selenium
 - JUnit/Mockito
 - Cucumber/Gherkin
-- Jenkins
 - Sonar
 
 # Get Started
